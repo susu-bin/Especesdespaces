@@ -1,0 +1,509 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+
+
+
+/* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll {
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+	font-family: 'Fira Code', monospace, "Noto Sans KR", sans-serif, serif, Helvetica;
+    text-align: left;
+    font-size: 2em;
+    word-break: keep-all;
+    color: black;
+    background-color: #EFEEEC;
+    scroll-snap-type:y mandatory;
+    word-spacing: -0.1px;  /* 단어사이의 간격 */
+    letter-spacing: 0.03px;  /*글자사이 간격*/
+    
+}
+
+.left-contents {
+    word-spacing: 0.2px;  /* 단어사이의 간격 */
+    letter-spacing: -0.5px;  /*글자사이 간격*/
+    line-height: 140%;
+    margin-top: 30px;
+    margin-left: 3%;
+    scroll-snap-type:y mandatory;
+    
+}
+
+
+
+.left-contents-p {
+    word-spacing: 1px;  /* 단어사이의 간격 */
+    letter-spacing: -0.5px;  /*글자사이 간격*/
+    line-height: 130%;
+    margin-top: 15px;
+    margin-left: 5%;
+    scroll-snap-type:y mandatory;
+    
+}
+
+.underline {
+    text-decoration: underline
+}
+
+::selection{
+    background-color: black;
+    color: #EFEEEC;
+}
+
+
+
+
+
+/*텍스트***********************/
+.text {
+    letter-spacing: 0.05em;
+}
+
+
+.texttitle {
+    font-size: 8rem;
+    z-index: 200;
+}
+
+
+
+
+
+
+
+
+
+/*네비게이션********************************************/
+.wrapper-nav {
+    width: 100%;
+    margin: auto;
+    background: #EFEEEC;
+    color: black;
+
+    padding-top: 30px;
+    display: flex;       /*가로배열*/
+    justify-content: space-between; /*가로배열*/
+    z-index: 300;
+    position: fixed;
+}
+
+.titlelogo {
+    width: 32px;
+    margin-right: 5px;
+}
+
+.logo {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 2%;
+    word-spacing: -20px;  /* 단어사이의 간격 */
+    letter-spacing: 0.03px;  /*글자사이 간격*/
+}
+
+
+li {
+    list-style-type: none;   /* 리스트 기호 없애기*/
+
+}
+
+
+
+a {
+    text-decoration-line: none;  /*하이퍼링크 줄 없애기*/
+    display: block;
+    color: black;
+    padding: 2px 20px;  /*양 옆*/
+    line-height: 30px;  /*높이*/
+}
+
+a:hover {
+    border: solid 1px black;
+}
+
+
+.menu {
+    letter-spacing: 1.2px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: flex;
+    margin-right: 33%;
+    word-spacing: -5px;  /* 단어사이의 간격 */
+    letter-spacing: -0.08px;  /*글자사이 간격*/
+}
+/*네비게이션****************************************************/
+
+
+
+
+/*해더********************/
+#mute-btn1 {
+    color: black;
+    position: fixed;
+    padding: 16px;
+    left: 0;
+    top: 0px;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+#mute-btn2 {
+    color: black;
+    position: fixed;
+    padding: 16px;
+    left: 300px;
+    top: 0px;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+
+/*이미지********************/
+
+.mainimg {
+    width: 100%;
+    height: auto;
+}
+
+.img_left {
+    width: 120%;
+    height: auto;
+}
+
+
+
+.img_contents_title {
+    width: 60%;
+    height: auto;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.margintop {
+    margin-top: 40px;
+}
+
+.img_leftlogo {
+    width: 30%;
+    height: auto;
+}
+
+.img100 {
+    width: 100%;
+}
+
+.img90 {
+    width: 90%;
+}
+
+.img80 {
+    width: 80%;
+}
+
+.img70 {
+    width: 70%;
+}
+
+.img60 {
+    width: 60%;
+}
+
+.img50 {
+    width: 50%;
+}
+
+.img40 {
+    width: 40%;
+}
+
+.img30 {
+    width: 30%;
+}
+
+.imgmargin {
+    margin-left: 4.5%;
+    margin-top: 20px;
+}
+
+
+
+pre {
+    line-height : 22px;
+}
+
+
+/*마우스 오버*/
+#mute-btn1:hover {
+    color: white;
+}
+
+
+#mute-btn2:hover {
+    color: white;
+}
+
+
+
+.contents-border {
+border: solid 1px black;
+display: inline-block;
+padding: 5px;
+font-size: 1.3rem;
+}
+
+
+
+/*글자 마진값 초기화*/
+h1, p { margin: 0; }
+
+
+
+
+/*컨테이너*/
+.container {
+    margin: 0 auto;
+    max-width: 1800px;
+    
+}
+
+
+/*미디어쿼리 했을 때의 마진값인가?*/
+.item {
+    padding: 5%;
+}
+
+
+/*규격*/
+
+
+.item.item-a {
+    background-color: #EFEEEC;
+    border: 1px solid black;
+    border-left: none;
+    height: 769px;
+    overflow: auto;
+    scroll-behavior:smooth;
+}
+
+.item-right.item-b {
+    background-color: #EFEEEC;
+    border-bottom: 1px solid black;
+    height: 769px;
+    overflow: auto;
+    scroll-behavior:smooth;
+}
+
+
+
+.item.item-c.item-d.item-e {
+    background-color: #EFEEEC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+    .container {
+        font-size: 0; 
+    }
+    .item {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 1.2rem;
+        padding: 2%;
+        margin-top: 90px;
+        scroll-snap-type:y mandatory;
+    }
+
+    .item-right {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 1.2rem;
+        padding: 0%;
+        margin-top: 90px;
+        scroll-snap-type:y mandatory;
+    }
+    
+    .item-footer {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 0.8rem;
+        padding: 2%;
+        margin-top: 5px;
+    }
+
+    .item-a {
+        width: 50%;
+    }
+    .item-b {
+        width: 50%;
+    }
+
+    .item-c {
+        width: 25%;
+    }
+
+    .item-d {
+        width: 25%;
+    }
+
+    .item-e {
+        width: 25%;
+    }
+
+    .item-f {
+        width: 25%;
+
+    }
+
+}
+
+
+
+
+/***토글*************************/
+.document{
+    cursor: pointer;
+    width: 100px;
+    padding: 15px;
+    padding-bottom:15px;
+    width: 100%;
+    border: 1px solid black;
+    border-bottom: none;
+    border-left: none;
+    }
+    
+    .document:hover{
+    color: #EFEEEC;
+    background-color: black;
+    }
+    
+    .document[open] {
+    color: black;
+    background-color: #EFEEEC;
+    }
+    
+    
+    
+    
+    
+    .document summary::-webkit-details-marker {
+    display:none;
+    }
+    
+    .document summary{
+    display: block;
+    padding-left: 13px;
+    font-size: 1.4rem;
+    }
+    
+    
+    .document h1{
+    border-bottom: 1px solid black;
+    width: 85%;
+    margin-top: 120px;
+    margin-bottom: 25px;
+    margin-left: 13px;
+    font-size: 2rem;
+    }
+    
+    .document h2{
+    margin-bottom: 25px;
+    font-size:15px;
+    text-align: center;
+    margin-left: 13px;
+    }
+    
+    
+    
+    .document p{
+    margin-top: 20px;
+    margin-left: 13px;
+    font-size:1.2rem;
+    width: 65%;
+    }
+    
+    
+    
+    
+    
+    .box-menu-item {
+        width: 300px;
+        height: 300px;
+        color: black;
+        background-color: transparent;
+        border-radius: 100%;
+        border: 1px solid black;
+        margin: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.9rem;
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        line-height: 1.8;
+        word-wrap: break-word;
+        }
+    
+    
+    .box-menu-item:hover {
+            background: black;
+            color: white
+    }
+    
+    .box-menu-item:active :checked  {
+        background: black;
+        color: white
+    }
+    
+    
+/***토글 ************************/
+
+/*footer*************************************************/
+
+
+
+footer{
+    flex-wrap: wrap; 
+    gap: 10px 5%;
+}
+
+
+.footertext{
+    text-align: left; 
+    font-size: 0.9em;
+}

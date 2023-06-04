@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+
+
+
+/* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll {
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+	font-family: 'Fira Code', monospace, "Noto Sans KR", sans-serif, serif, Helvetica;
+    text-align: center;
+    font-size: 1em;
+    word-break: keep-all;
+    color: black;
+    background-color: #EFEEEC;
+    scroll-snap-type:y mandatory;
+    word-spacing: -0.1px;  /* 단어사이의 간격 */
+    letter-spacing: 0.03px;  /*글자사이 간격*/
+
+    
+    
+}
+
+.right{
+    word-spacing: 0.2px;  /* 단어사이의 간격 */
+    letter-spacing: -0.5px;  /*글자사이 간격*/
+    text-align: right;
+}
+
+.left{
+    word-spacing: 0.2px;  /* 단어사이의 간격 */
+    letter-spacing: -0.5px;  /*글자사이 간격*/
+    text-align: left;
+    margin-right:-290px;
+    z-index: 100;
+    
+}
+
+
+
+
+
+::selection{
+    background-color: black;
+    color: #EFEEEC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*네비게이션********************************************/
+.wrapper-nav {
+    width: 100%;
+    margin: auto;
+    background: #EFEEEC;
+    color: black;
+
+    padding-top: 30px;
+    display: flex;       /*가로배열*/
+    justify-content: space-between; /*가로배열*/
+    z-index: 300;
+    position: fixed;
+}
+
+.titlelogo {
+    width: 32px;
+    margin-right: 5px;
+}
+
+.logo {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 2%;
+    word-spacing: -20px;  /* 단어사이의 간격 */
+    letter-spacing: 0.03px;  /*글자사이 간격*/
+}
+
+
+li {
+    list-style-type: none;   /* 리스트 기호 없애기*/
+
+}
+
+
+
+
+.navmenu {
+    text-decoration-line: none;  /*하이퍼링크 줄 없애기*/
+    display: block;
+    color: black;
+    padding: 2px 20px;  /*양 옆*/
+    line-height: 30px;  /*높이*/
+}
+
+.navmenu:hover {
+    border: solid 1px black;
+}
+
+
+
+
+
+
+
+
+.contentsmenu {
+    text-decoration-line: none;  /*하이퍼링크 줄 없애기*/
+    display: inline-block;
+    color: black;
+}
+
+.contentsmenu:hover {
+    background-color: black;
+    color : #EFEEEC;
+}
+
+
+.menu {
+    letter-spacing: 1.2px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: flex;
+    margin-right: 19.6%;
+    word-spacing: -5px;  /* 단어사이의 간격 */
+    letter-spacing: -0.08px;  /*글자사이 간격*/
+}
+/*네비게이션****************************************************/
+
+
+
+
+
+
+
+
+pre {
+    line-height : 22px;
+}
+
+
+
+
+
+
+
+
+
+
+/*컨테이너*/
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    
+}
+
+
+
+
+/*규격*/
+
+
+.item.item-a {
+    background-color: #EFEEEC;
+    border-left: none;
+    overflow: auto;
+    scroll-behavior:smooth;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+
+
+.item.item-a {
+    background-color: #EFEEEC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1800px) {
+    .container {
+        font-size: 0; 
+    }
+    .item {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 1.2rem;
+        margin-top: 130px;
+        scroll-snap-type:y mandatory;
+        text-align: center;
+    }
+
+
+
+}
+
+
+
